@@ -5,10 +5,14 @@
  * @LastEditors: Gleason
  * @LastEditTime: 2022-02-23 10:48:47
  */
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
+import noderesolve from "rollup-plugin-node-resolve";  // 帮助寻找node_modules里的包
+import babel from 'rollup-plugin-babel' // rollup 的 babel 插件，ES6转ES5
+import replace from 'rollup-plugin-replace' // 替换待打包文件里的一些变量，如process在浏览器端是不存在的，需要被替换
+import commonjs from "rollup-plugin-commonjs"; 
 import typescript from "rollup-plugin-typescript";
 import pkg from "./package.json";
+
+const env = process.env.NODE_ENV
 
 export default {
 	input: "src/index.ts", // 打包入口
@@ -18,9 +22,15 @@ export default {
 		format: "umd", // umd是兼容amd/cjs/iife的通用打包格式，适合浏览器
 	},
 	plugins: [
-		// 打包插件
-		resolve(), // 查找和打包node_modules中的第三方模块
+		noderesolve(), // 查找和打包node_modules中的第三方模块
 		commonjs(), // 将 CommonJS 转换成 ES2015 模块供 Rollup 处理
 		typescript(), // 解析TypeScript
+    babel({
+      exclude: 'node_modules/**' // 排除 node_modules 代码只编我们自己的写的代码
+    }),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify(env)
+    }),
+    commonjs()
 	],
 };

@@ -1,6 +1,7 @@
 const path = require("path");
 const shelljs = require("shelljs");
 const program = require("commander");
+const fs = require('fs')
 
 const targetFile = path.resolve(__dirname, "../dist/package.json");
 const packagejson = require(targetFile);
@@ -26,7 +27,9 @@ if (program.versions) {
 	newVersion = program.versions;
 }
 
+
 function publish() {
+	console.log('执行发布流程')
 	shelljs.sed("-i", '"name": "gtools"', '"name": "@wind/tools"', targetFile); // 修改包名
 	shelljs.sed(
 		"-i",
