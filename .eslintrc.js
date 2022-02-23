@@ -1,3 +1,4 @@
+
 module.exports = {
   env: {
     browser: true,
@@ -5,7 +6,8 @@ module.exports = {
     jest: true  // 支持jest
   },
   extends: [
-    'standard'
+    'standard',
+		'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
