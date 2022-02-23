@@ -1,14 +1,19 @@
 {
-  "name": "gtools",
-  "version": "1.0.0",
-  "description": "一个工具库",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Gleason",
-  "license": "ISC",
-  "devDependencies": {
-    "rollup": "^2.68.0"
-  }
+	"name": "gtools",
+	"version": "1.0.0",
+	"description": "一个工具库",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"toolkit",
+		"rollup",
+		"typescript"
+	],
+	"author": "Gleason",
+	"license": "ISC",
+	"devDependencies": {
+		"rollup": "^2.68.0"
+	}
 }
