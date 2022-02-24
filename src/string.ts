@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 18:10:08
  * @LastEditors: Gleason
- * @LastEditTime: 2022-02-23 18:37:10
+ * @LastEditTime: 2022-02-24 09:38:48
  */
 
 /**
@@ -12,7 +12,7 @@
  * @return {boolean}
  * @example isAZaz('abc') => true
  */
-const isAZaz = (val: string): boolean => {
+export const isAZaz = (val: string): boolean => {
 	return /^\d+(\.\d+)?$/.test(val.toString());
 };
 
@@ -22,7 +22,7 @@ const isAZaz = (val: string): boolean => {
  * @return {boolean}
  * @example isAZ('ABC') => true
  */
-const isAZ = (val: string): boolean => {
+export const isAZ = (val: string): boolean => {
 	return /^[A-Z]+$/.test(val);
 };
 
@@ -32,7 +32,7 @@ const isAZ = (val: string): boolean => {
  * @return {boolean}
  * @example isaz('abc') => true
  */
-const isaz = (val: string): boolean => {
+export const isaz = (val: string): boolean => {
 	return /^[a-z]+$/.test(val);
 };
 
@@ -42,7 +42,7 @@ const isaz = (val: string): boolean => {
  * @return {boolean}
  * @example isEmailAddress('133@qq.com') => true
  */
-const isEmailAddress = (val: string): boolean => {
+export const isEmailAddress = (val: string): boolean => {
 	return /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(val) || /w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*/.test(val);
 };
 

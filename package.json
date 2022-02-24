@@ -7,7 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "rollup -c",
 		"pub": "node scripts/publish.js",
-		"copy": "node scripts/copyfile.js",
+		"copy": "node scripts/copyfile.js"
 	},
 	"keywords": [
 		"toolkit",

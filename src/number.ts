@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 17:55:47
  * @LastEditors: Gleason
- * @LastEditTime: 2022-02-23 18:11:58
+ * @LastEditTime: 2022-02-24 09:38:00
  */
 
 /**
@@ -12,7 +12,7 @@
  * @return {boolean} true 为正整数
  * @example isNegativeNum(9) => true
  */
-const isPositiveNum = (val:number):boolean => {
+export const isPositiveNum = (val: number): boolean => {
 	return /^[1-9]d*$/.test(val.toString());
 };
 
@@ -22,7 +22,7 @@ const isPositiveNum = (val:number):boolean => {
  * @return {boolean} true 为负整数
  * @example isNegativeNum(-9) => true
  */
-const isNegativeNum = (val:number):boolean => {
+export const isNegativeNum = (val: number): boolean => {
 	return /^-[1-9]d*$/.test(val.toString());
 };
 
@@ -32,7 +32,7 @@ const isNegativeNum = (val:number):boolean => {
  * @return {boolean} true 整数
  * @example isInteger(2.2) => false
  */
-const isInteger = (val:number):boolean => {
+export const isInteger = (val: number): boolean => {
 	return /^(-|\+)?\d+$/.test(val.toString());
 };
 
@@ -42,7 +42,7 @@ const isInteger = (val:number):boolean => {
  * @return {boolean}
  * @example isNotNegativeFloatNum(2.2) => true
  */
-const isNotNegativeFloatNum =(val:number):boolean => {
+export const isNotNegativeFloatNum = (val: number): boolean => {
 	return /^\d+(\.\d+)?$/.test(val.toString());
 };
 

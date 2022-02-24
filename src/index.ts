@@ -3,6 +3,6 @@
  * @Author: Gleason
  * @Date: 2022-02-23 11:03:43
  * @LastEditors: Gleason
- * @LastEditTime: 2022-02-23 17:05:44
+ * @LastEditTime: 2022-02-24 10:02:59
  */
-console.log("hello ktools!");
+export { arrayMax, arrayMin, compact, countOccurrences } from "./array"
