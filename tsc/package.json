@@ -1,0 +1,19 @@
+{
+	"name": "tools-an",
+	"version": "0.0.1",
+	"description": "一个工具库",
+	"main": "./lib/index.js",
+	"types":"./types/index.d.ts",
+	"keywords": [
+		"toolkit",
+		"rollup",
+		"typescript"
+	],
+	"browser": "dist/index.js",
+	"author": "BianLiuZhu",
+	"license": "ISC",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

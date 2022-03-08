@@ -1,7 +1,7 @@
+
 const path = require("path");
 const shelljs = require("shelljs");
 const program = require("commander");
-const fs = require('fs')
 
 const targetFile = path.resolve(__dirname, "../dist/package.json");
 const packagejson = require(targetFile);

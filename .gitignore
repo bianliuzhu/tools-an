@@ -2,3 +2,5 @@
 /node_modules
 # 输出文件
 /dist
+
+/tsc
