@@ -1,6 +1,6 @@
 {
 	"name": "tools-an",
-	"version": "0.1.4",
+	"version": "0.1.8",
 	"description": "函数工具库,涵盖数组，字符串，对象，浏览器等常用业务方法函数",
 	"main": "./package/lib/index.js",
 	"types":"./package/types/index.d.ts",
