@@ -7,8 +7,8 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"declaration": true,
-		"outDir": "tsc/lib",
-		"declarationDir":"tsc/types",
+		"outDir": "package/lib",
+		"declarationDir":"package/types",
 	},
 	"include": ["**/*"],
 	"exclude": []

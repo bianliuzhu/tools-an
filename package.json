@@ -1,9 +1,9 @@
 {
-	"name": "wind-tools",
-	"version": "1.0.0",
-	"description": "一个工具库",
-	"main": "index.js",
-	"types":"",
+	"name": "tools-an",
+	"version": "0.1.4",
+	"description": "函数工具库,涵盖数组，字符串，对象，浏览器等常用业务方法函数",
+	"main": "./package/lib/index.js",
+	"types":"./package/types/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "rollup -c",
@@ -13,11 +13,26 @@
 	"keywords": [
 		"toolkit",
 		"rollup",
-		"typescript"
+		"typescript",
+		"utils"
 	],
 	"browser": "dist/index.js",
-	"author": "Gleason",
-	"license": "ISC",
+	"author": {
+		"name" : "Gleason",
+		"email" : "bianliuzhu@gmail.com",
+		"url" : "https://github.com/bianliuzhu"
+	},
+	"homepage": "https://www.npmjs.com/package/tools-an",
+	"repository": "https://github.com/bianliuzhu/tools-an",
+	"bugs": {
+		"url" : "https://github.com/bianliuzhu/tools-an/issues",
+		"email" : "bianliuzhu@gmail.com"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"package/"
+	],
 	"devDependencies": {
 		"@babel/core": "^7.17.5",
 		"@babel/preset-env": "^7.16.11",
@@ -43,8 +58,6 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.5.5"
 	},
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/"
-	}
+	"preferGlobal": false,
+	"license": "MIT"
 }
