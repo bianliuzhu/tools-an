@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-03-08 13:45:09
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 15:31:35
+ * @LastEditTime: 2022-03-08 16:03:13
  */
 
 /**
@@ -90,7 +90,7 @@ export const getClientHeight = (): number => {
 };
 
 /**
- * @description 获取窗口可视范围宽度
+ * @description 获取窗口可视范围的宽度
  * @param {*} 没有参数
  * @return {number} 窗口可视范围的宽度
  * @example isSubnetMask ('133@qq.com') => true

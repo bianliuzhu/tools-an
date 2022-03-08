@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 11:03:43
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 15:35:51
+ * @LastEditTime: 2022-03-08 16:15:22
  */
 export {
 	arrayMax,
@@ -62,7 +62,7 @@ export {
 	isInteger,
 	isNotNegativeFloatNum,
 	formatMoney,
-	subText
+	isDecimal,
 } from './number'
 
 export { pick } from './object'
@@ -107,11 +107,11 @@ export {
 	isIDCard,
 	isPassport,
 	isWebAccount,
-	isDecimal,
 	isNumber,
 	isQQNum,
 	isNumAndStr,
 	isEnglish,
 	isCapital,
 	isLowercase,
+	subText
 } from './string'

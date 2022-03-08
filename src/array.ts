@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 18:19:04
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 11:22:25
+ * @LastEditTime: 2022-03-08 15:57:43
  */
 
 /**
@@ -132,7 +132,7 @@ export function initializeArrayWithRange(end: any, start = 0) {
 };
 
 /**
- * @description: 初始化并填充具有指定值的数组
+ * @description: 返回两个数组中存在的元素的列表
  * 使用Array(n)创建所需长度的数组,fill(v)以填充所需的值。可以省略value以使用默认值0.
  * @param {Array<T>} arr
  * @return {Array<T>} 填充后的数组

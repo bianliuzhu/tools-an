@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 18:10:08
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 15:31:46
+ * @LastEditTime: 2022-03-08 16:36:38
  */
 
 /**
@@ -50,7 +50,7 @@ export const isEmailAddress = (val: string): boolean => {
  * @description: 验证email(邮箱)
  * @param {string} value
  * @return {boolean} 是否通过验证
- * @example isEmailAddress('133@qq.com') => true
+ * @example isEmail('133@qq.com') => true
  */
 export const isEmail = (value: string): boolean => {
 	return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/g.test(value);
@@ -336,14 +336,6 @@ export const isPassport = (value: string): boolean => /(^[EeKkGgDdSsPpHh]\d{8}$)
 export const isWebAccount = (value: string): boolean => /^[a-zA-Z]\w{4,15}$/g.test(value);
 
 /**
- * @description:验证小数
- * @param {string} value
- * @return {boolean} 验证通过是否
- * @example isSubnetMask ('133@qq.com') => true
- */
-export const isDecimal = (value: string): boolean => /^\d+\.\d+$/g.test(value);
-
-/**
  * @description:验证数字
  * @param {string} value
  * @return {boolean} 验证通过是否
@@ -390,3 +382,21 @@ export const isCapital = (value: string): boolean => /^[A-Z]+$/g.test(value);
  * @example isSubnetMask ('133@qq.com') => true
  */
 export const isLowercase = (value: string): boolean => /^[a-z]+$/g.test(value);
+
+
+/**
+ * @description: 截取字符串并加略号
+ * @param {string}  字符串
+ * @return {string} 增加省略号的字符串
+ * @example isNotNegativeFloatNum(2.2) => true
+ */
+export const subText = (str: string, leg: number) => {
+	if (str.length === 0) {
+		return '';
+	}
+	if (str.length > leg) {
+		return str.substr(0, leg) + "...";
+	} else {
+		return str;
+	}
+};

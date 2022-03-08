@@ -1,13 +1,14 @@
 {
 	"name": "tools-an",
-	"version": "0.0.1",
-	"description": "一个工具库",
+	"version": "0.1.0",
+	"description": "一个函数工具库",
 	"main": "./lib/index.js",
 	"types":"./types/index.d.ts",
 	"keywords": [
 		"toolkit",
 		"rollup",
-		"typescript"
+		"typescript",
+		"utils"
 	],
 	"browser": "dist/index.js",
 	"author": "BianLiuZhu",
