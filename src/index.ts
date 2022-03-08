@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 11:03:43
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 16:15:22
+ * @LastEditTime: 2022-03-08 17:22:01
  */
 export {
 	arrayMax,
@@ -24,7 +24,8 @@ export {
 	sample,
 	shuffle,
 	removeArrayItem,
-	contains
+	contains,
+	shuffleArray
 } from "./array"
 
 export {
@@ -43,6 +44,7 @@ export {
 	getScrollPosition,
 	smoothScroll,
 	scrollToTop,
+	scrollToBottom,
 	httpsRedirect,
 	bottomVisible,
 	openWindow,
@@ -54,6 +56,8 @@ export {
 	formatFileSize,
 	base64ToFile,
 	base64ToBlob,
+	copyToClipboard,
+	isDarkMode,
 } from './browser'
 
 export {
@@ -113,5 +117,6 @@ export {
 	isEnglish,
 	isCapital,
 	isLowercase,
-	subText
+	subText,
+	generateRandomHexColor
 } from './string'

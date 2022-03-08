@@ -41,6 +41,7 @@ arrayMax([1,3,2]) // => [3]
 - shuffle: 随机数组值的顺序
 - removeArrayItem: 从给定数组中移除一项
 - contains: 检查给定数组中是否包含某项
+- shuffleArray:数组乱序
 
 **浏览器**
 
@@ -58,7 +59,8 @@ arrayMax([1,3,2]) // => [3]
 - exitFullscreen: 退出全屏
 - getScrollPosition: 返回当前滚动条位置
 - smoothScroll: 滚动到指定元素区域
-- scrollToTop: 平滑滚动到页面顶部
+- scrollToTop: 滚动到顶部
+- scrollToBottom: 滚动到底部
 - httpsRedirect: http跳转https
 - bottomVisible: 检查页面底部是否可见
 - openWindow: 打开一个窗口
@@ -69,6 +71,9 @@ arrayMax([1,3,2]) // => [3]
 - fileToBase64String: 获取文件 base64 编码
 - base64ToFile: base64 转 file
 - base64ToBlob: base64 转 blob
+- copyToClipboard: 复制到剪贴板
+- isDarkMode: 检测黑暗模式
+- 
 
 **数字**
 
@@ -181,6 +186,8 @@ arrayMax([1,3,2]) // => [3]
   **颜色**
 
 - isColor16: 验证16进制颜色
+
+- generateRandomHexColor: 生成随机颜色
 
   **版本**
 

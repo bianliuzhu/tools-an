@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 18:19:04
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 15:57:43
+ * @LastEditTime: 2022-03-08 16:58:56
  */
 
 /**
@@ -211,6 +211,15 @@ export function contains<T>(arr: Array<T>, item: T) {
 		}
 	}
 	return false;
+};
+
+/**
+ * @description: 数组乱序
+ * @param {Array<T>} arr
+ * @return {boolean} true 包含
+ */
+export function shuffleArray<T>(arr: Array<T>) {
+	return arr.sort(() => Math.random() - 0.5)
 };
 
 

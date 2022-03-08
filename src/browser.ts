@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-03-08 13:45:09
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 16:03:13
+ * @LastEditTime: 2022-03-08 17:19:12
  */
 
 /**
@@ -231,6 +231,14 @@ export const scrollToTop = () => {
 }
 
 /**
+ * @description 平滑滚动到底部
+ * @param {HTMLElement} element
+ * @return {*} -
+ */
+export const scrollToBottom = (element: any) =>
+	element.scrollIntoView({ behavior: "smooth", block: "end" })
+
+/**
  * @description http跳转https
  * @param {*} -
  * @return {*} -
@@ -443,3 +451,27 @@ export const base64ToBlob = (base64: any) => {
 	}
 	return new Blob([u8arr], { type: mime });
 };
+
+/**
+ * @description 复制到剪贴板
+ * @param {any} text
+ * @return {boolean} 复制成功或失败
+ */
+export const copyToClipboard = (text: any) => {
+	if (navigator.clipboard?.writeText) {
+		navigator.clipboard.writeText(text)
+		return true
+	} else {
+		return false
+	}
+}
+
+/**
+ * @description 检测黑暗模式
+ * @param {*} 无参数
+ * @return {boolean} 是否为暗黑模式
+ */
+export const isDarkMode = () => window.matchMedia &&
+	window.matchMedia("(prefers-color-scheme: dark)").matches
+
+

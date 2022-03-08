@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 18:10:08
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-08 16:36:38
+ * @LastEditTime: 2022-03-08 17:31:50
  */
 
 /**
@@ -400,3 +400,11 @@ export const subText = (str: string, leg: number) => {
 		return str;
 	}
 };
+
+/**
+ * @description: 生成随机颜色
+ * @param {*} -
+ * @return {string} 十六进制随机色
+ * @example isNotNegativeFloatNum(2.2) => true
+ */
+export const generateRandomHexColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;

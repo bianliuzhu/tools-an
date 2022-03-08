@@ -1,6 +1,6 @@
 {
 	"name": "tools-an",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "一个函数工具库",
 	"main": "./lib/index.js",
 	"types":"./types/index.d.ts",
