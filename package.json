@@ -16,7 +16,6 @@
 		"typescript",
 		"utils"
 	],
-	"browser": "dist/index.js",
 	"author": {
 		"name" : "Gleason",
 		"email" : "bianliuzhu@gmail.com",

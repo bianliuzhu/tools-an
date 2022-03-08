@@ -3,7 +3,7 @@
  * @Author: Gleason
  * @Date: 2022-02-23 10:47:40
  * @LastEditors: Gleason
- * @LastEditTime: 2022-03-07 14:47:13
+ * @LastEditTime: 2022-03-08 21:49:24
  */
 import noderesolve from "rollup-plugin-node-resolve";  // 帮助寻找node_modules里的包
 import babel from 'rollup-plugin-babel' // rollup 的 babel 插件，ES6转ES5
@@ -17,7 +17,7 @@ const env = process.env.NODE_ENV
 export default {
 	input: "tsc/lib/index.js", // 打包入口
 	output: { // 打包出口
-		file: pkg.browser, // 最终打包出来的文件路径和文件名，这里是在package.json的browser: 'dist/index.js'字段中配置的
+		file: 'dist/index.js', // 最终打包出来的文件路径和文件名，这里是在package.json的browser: 'dist/index.js'字段中配置的
 		format: "umd", // umd是兼容amd/cjs/iife的通用打包格式，适合浏览器
 		name: 'file'
 	},
