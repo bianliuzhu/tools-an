@@ -10,6 +10,6 @@
 		"outDir": "package/lib",
 		"declarationDir":"package/types",
 	},
-	"include": ["**/*"],
+	"include": ["src/*"],
 	"exclude": []
 }
